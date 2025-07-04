@@ -402,14 +402,12 @@ button {
 .skill-row {
 	margin: 0 0 10px;
 	padding: 0;
-	/* padding-bottom: 0; */
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
-	/* width: auto; */
 }
 
 .skill-row h4 {
@@ -437,9 +435,10 @@ button {
 	padding: 0px 5px;
 	margin: 1px 2px;
 	display: inherit;
+	align-items: center;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	border-radius: 14px;
+	border-radius: 5px;
 	border: 1px solid var(--c);
 	text-transform: none;
 	cursor: default;
@@ -478,9 +477,9 @@ button {
 }
 
 .pie {
-  --w: 20px;
   --p: calc(var(--pb) + 28.4601837);
-  width: var(--w);
+  width: 20px;
+  height: fit-content;
   aspect-ratio: 1;
   display: inline-grid;
   margin: 5px 2px 5px 5px;
@@ -510,7 +509,7 @@ button {
 .soft .pie:before{
 	background: conic-gradient(var(--c) calc(var(--pb)*1%),#0000 0);
 	-webkit-mask-image: radial-gradient(circle,rgb(0, 0, 0, 0) 45%,#000 55%);
-	mask-image:radial-gradient(circle,rgb(0, 0, 0, 0) 75%,#000 25%);
+	mask-image:radial-gradient(circle,rgb(0, 0, 0, 0) 45%,#000 55%);
 	transform: rotate(45deg);
 }
 
